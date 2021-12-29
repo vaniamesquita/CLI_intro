@@ -1,0 +1,39 @@
+#!/bin/bash
+#script criado para a aula de Introdução a linha de comando, realizada pelo Victor Quezado em 15/12
+
+
+
+
+figlet -f big "Bem Vindo"
+
+
+                                     
+echo "Seja bem vindo ao meu primeiro script (: "
+echo "Para iniciarmos, por favor insira seu nome de usuário:"
+read -p "Usuário: " nome_usuario;
+echo ""
+echo "Olá $nome_usuario! :)"
+echo ""
+echo "Por favor, agora digite sua senha: "
+read -s Senha;
+
+echo "Obrigada $nome_usuario, mas $Senha é muito fácil hein kkk"
+echo ""
+echo "Você deseja cadastrar uma nova senha?, se sim, digite Y, senão digite N"
+read escolha;
+
+if [ $escolha  == Y ];
+then
+echo "opa, sem problemas, só digitar sua nova senha:"
+read -s nova_senha;
+echo "show, sua nova senha agora é $nova_senha"
+echo ""
+elif [ $escolha == N ];
+then
+echo "beleza, ficamos com a senha antiga então"
+fi
+
+
+echo "$nome_usuario, Obrigada pela sua visita!!"
+echo ""
+echo "==========fim do script=========="
