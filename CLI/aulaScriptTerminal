@@ -24,13 +24,13 @@ read escolha;
 
 if [ $escolha  == Y ];
 then
-echo "opa, sem problemas, só digitar sua nova senha:"
-read -s nova_senha;
-echo "show, sua nova senha agora é $nova_senha"
-echo ""
+  echo "opa, sem problemas, só digitar sua nova senha:"
+  read -s nova_senha;
+  echo "show, sua nova senha agora é $nova_senha"
+  echo ""
 elif [ $escolha == N ];
-then
-echo "beleza, ficamos com a senha antiga então"
+  then
+  echo "beleza, ficamos com a senha antiga então"
 fi
 
 
